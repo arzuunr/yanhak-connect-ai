@@ -39,6 +39,7 @@ const Index = () => {
                 <a href="#" className="text-primary hover:text-primary-hover transition-colors">Özellikler</a>
                 <a href="#" className="text-primary hover:text-primary-hover transition-colors">Kıyaslama</a>
                 <a href="#" className="text-foreground hover:text-primary transition-colors">Analiz Talebi</a>
+                <a href="/help-desk" className="text-foreground hover:text-primary transition-colors">Yardım</a>
               </div>
             </div>
             <div className="flex items-center space-x-4">
