@@ -305,6 +305,11 @@ const HelpDesk = () => {
                         ? "hover:shadow-card hover:scale-105" 
                         : "opacity-60 cursor-not-allowed"
                     )}
+                    onClick={() => {
+                      if (option.available && option.title === "E-posta Desteği") {
+                        window.location.href = "/submit-request";
+                      }
+                    }}
                   >
                     <CardHeader>
                       <div className="flex items-center gap-4">
@@ -338,6 +343,11 @@ const HelpDesk = () => {
                           variant={option.available ? "default" : "ghost"} 
                           size="sm"
                           disabled={!option.available}
+                          onClick={() => {
+                            if (option.title === "E-posta Desteği") {
+                              window.location.href = "/submit-request";
+                            }
+                          }}
                         >
                           {option.action}
                         </Button>
@@ -419,9 +429,14 @@ const HelpDesk = () => {
               <MessageCircle className="h-5 w-5 mr-2" />
               Canlı Chat Başlat
             </Button>
-            <Button variant="outline" size="lg" className="hover:scale-105 transition-transform">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="hover:scale-105 transition-transform"
+              onClick={() => window.location.href = "/submit-request"}
+            >
               <Mail className="h-5 w-5 mr-2" />
-              E-posta Gönder
+              Destek Talebi Oluştur
             </Button>
           </div>
         </div>
