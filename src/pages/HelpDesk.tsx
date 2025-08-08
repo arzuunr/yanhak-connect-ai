@@ -52,27 +52,164 @@ const HelpDesk = () => {
     },
   ];
 
-  const faqData = [
+  const faqCategories = [
     {
-      question: "Yanhak platformu nedir?",
-      answer: "Yanhak, modern işletmeler için tasarlanmış kapsamlı bir hak yönetimi platformudur. Tüm haklarınızı tek çatı altında toplayarak, kolay kullanım ve basit arayüz ile yönetmenizi sağlar.",
+      title: "1. Genel Bilgiler",
+      questions: [
+        {
+          question: "Yanhak nedir?",
+          answer: "Yanhak, şirketlerin çalışanlarına ek bir maliyet yükü getirmeden, avantajlı alışveriş imkanları sunan, indirimli hediye kodları/çekleri ve çeşitli ürünleri tek bir platformda birleştiren yapay zeka (AI) destekli bir çözümdür. Kullanıcılarımız bu platform sayesinde, bütçeleri dahilinde, kişiselleştirilmiş ürün ve hizmetler arasında geniş çeşitlilikte ve avantajlarla Yanhaklarını oluşturma imkanına sahip olurlar."
+        },
+        {
+          question: "Yanhak'ı kimler kullanabilir?",
+          answer: "Platformumuz dışarıya kapalı ve yalnızca Yanhak ile anlaşması bulunan şirketlerin aktif çalışanları ve şirket ayrıca eklemişse bayi, müşteri ve üyeleri tarafından kullanılabilmektedir. Şirketinizin platformda yer almaması kaynaklı giriş yapamadıysanız, İnsan Kaynakları departmanınıza Yanhak ile iletişime geçmeleri yönünde bilgi verebilirsiniz."
+        },
+        {
+          question: "Şirket katkısı ne anlama gelir?",
+          answer: "Şirket katkısı, işverenin Yanhak platformu üzerinden ilgili ürünlerde çalışana miktar yada oran üzerinden indirime ek olarak ödemeyi paylaşmasıdır. Bu sayede çalışanlar, kendilerine ayırdıkları bütçe dahilinde istedikleri ürün ve hizmetleri şirketleri sayesinde çok daha uygun fiyatlara satın alabilir."
+        }
+      ]
     },
     {
-      question: "Hangi ödeme yöntemlerini kabul ediyorsunuz?",
-      answer: "Kredi kartı, banka kartı, havale/EFT ve kurumsal fatura ödeme seçeneklerini destekliyoruz. Tüm ödemeler SSL ile güvence altındadır.",
+      title: "2. Hesap ve Giriş",
+      questions: [
+        {
+          question: "Nasıl giriş yaparım?",
+          answer: "Şirketiniz sizi Yanhak sistemine kaydettiğinde, size geçici şifrenizi içeren bir hoş geldin e-postası göndereceğiz. Bu e-posta ile sisteme ilk girişinizi yapabilirsiniz. Güvenliğiniz için giriş yaptıktan sonra bu geçici şifrenizi mutlaka değiştirmelisiniz."
+        },
+        {
+          question: "Şifremi unuttum, ne yapmalıyım?",
+          answer: "Eğer şifrenizi unuttuysanız, giriş ekranındaki 'Şifremi unuttum' bağlantısına tıklayın. Ardından, kayıtlı e-posta adresinize gelen geçici şifrenizle platforma giriş yapabilirsiniz. Platforma giriş yaptıktan sonra, isminizin üzerine tıklayarak 'Şifremi Değiştir' seçeneğine basabilir, yeni şifrenizi girip onaylayabilirsiniz."
+        },
+        {
+          question: "E-posta adresim değişti, güncelleyebilir miyim?",
+          answer: "E-posta adresinizde değişiklik yapmak için İnsan Kaynakları departmanınıza veya şirket yöneticinize başvurmanız gerekmektedir. Çalışan bilgilerinin güncellenmesi şirket yetkilileri tarafından gerçekleştirilebildiğinden, bu değişikliği bireysel olarak sistem üzerinden yapmanız mümkün değildir."
+        }
+      ]
     },
     {
-      question: "Demo hesabı nasıl alabilirim?",
-      answer: "Ana sayfadaki 'Demo Talep Et' butonuna tıklayarak form doldurabilir veya satış ekibimizle iletişime geçebilirsiniz. Demo hesabınız 24 saat içinde hazır olacaktır.",
+      title: "3. Hediye Kodu/Çekleri ve Ürünler",
+      questions: [
+        {
+          question: "Hediye kodu/çeki nedir, nasıl kullanılır?",
+          answer: "Hediye kodu/çeki, belirli bir marka veya kategoriye özel indirim sağlayan bir dijital kod ya da fiziksel bir çektir. Bu kodları/çekleri, ilgili markanın web sitesinde, uygulamasında veya mağazasında, ödeme yaparken kullanabilirsiniz. Kullanmadan önce, ürünün açıklama kısmını mutlaka dikkatle okuyun."
+        },
+        {
+          question: "Hediye kodunu/çekini başka birine devredebilir miyim?",
+          answer: "Bu durum, ürünün veya çekin açıklamasına bağlıdır. Ürün açıklamasında açıkça belirtiliyorsa, kodu/çeki başka biri adına alabilir veya devredebilirsiniz. Belirtilmemişse, bu işlem mümkün değildir."
+        },
+        {
+          question: "Hediye kodu/çekinin son kullanma tarihi var mı?",
+          answer: "Evet, hediye kodlarının/çeklerinin genellikle bir geçerlilik süresi bulunur. Bu süre markadan markaya değişmekle birlikte, genellikle 1 veya 2 yıl gibi olabilir. Satın almadan önce, ürün açıklamalarından son kullanım tarihini kontrol etmeniz önemlidir."
+        },
+        {
+          question: "Bir hediye kodu/çeki parça parça kullanabilir miyim?",
+          answer: "Parçalı kullanım, hediye kodunun/çekinin toplam tutarını tek bir alışverişte değil, birden fazla alışverişte, kalan bakiye üzerinden kullanabilme imkanıdır. Bu özellik, markaya ve koda/çeke göre değişir. Detaylar ilgili ürün açıklamasında yer alır."
+        }
+      ]
     },
     {
-      question: "Teknik destek nasıl alırım?",
-      answer: "7/24 canlı chat, e-posta veya telefon ile teknik destek alabilirsiniz. Premium müşterilerimiz için öncelikli destek hizmeti sunuyoruz.",
+      title: "4. Ödeme ve Faturalandırma",
+      questions: [
+        {
+          question: "Yanhak üzerinden ödeme nasıl yapılır?",
+          answer: "Yanhak platformu üzerinden satın alım yaparken, geçerli indirimlere ek olarak varsa şirket katkınız oran/miktarı toplam tutardan otomatik olarak düşülür. Kalan tutarı Yanhak bakiyesi ile ödenerek işlem tamamlanabilir, bakiyeniz yoksa kredi kartınızla bakiye yükleyebilirsiniz."
+        },
+        {
+          question: "Fatura nasıl kesiliyor?",
+          answer: "Gerçek kişiler (şahıslar) tarafından yapılan bakiye yüklemelerinde, yasal düzenlemeler gereği fatura yerine dekont düzenlenmektedir. Kurumlara yönelik yapılan yüklemelerde ise durum farklılık göstermektedir. Kurumsal müşteriler için yükleme işlemleri 0% KDV oranı ile faturalandırılmakta ve kurumsal fatura düzenlemesi doğrudan tarafımızca yapılmaktadır."
+        },
+        {
+          question: "Ödeme başarısız oldu, ne yapmalıyım?",
+          answer: "Kart limitinizi, internet alışverişi yetkinizi ve bilgilerinizi kontrol edin. Sorun devam ederse, destek ekibimiz destek@yanhak.com ile iletişime geçebilirsiniz."
+        }
+      ]
     },
     {
-      question: "Verilerim güvende mi?",
-      answer: "Evet, tüm verileriniz ISO 27001 sertifikalı veri merkezlerinde saklanır ve end-to-end şifreleme ile korunur. KVKK ve GDPR uyumlu çalışıyoruz.",
+      title: "5. İade, İptal ve Değişiklikler",
+      questions: [
+        {
+          question: "Hediye çekimi iptal edebilir miyim?",
+          answer: "Gönderimi yapılan hediye çekleri ve dijital kodlar iade edilemez veya iptal edilemez. Hediye çekiyle alınan nihai ürün veya nihai hizmetler, markanın iade politikalarına uygun olarak iade edilebilir."
+        },
+        {
+          question: "Yanlış marka/ürün aldım, değiştirebilir miyim?",
+          answer: "Hediye çekleri genellikle kişiye özeldir ve değişim kabul edilmez. Siparişiniz hediye çeki veya dijital kod niteliğindeyse, fiziksel olarak kargoya verilmeden veya dijital olarak iletilmeden önce bizimle iletişime geçmeniz halinde iptal işlemi gerçekleştirilebilir."
+        },
+        {
+          question: "Çek kullanılırken bir hata oldu, kod çalışmıyor. Ne yapmalıyım?",
+          answer: "Hediye çeki veya dijital kod kullanımı sırasında bir hata ile karşılaşmanız durumunda, öncelikle ilgili markanın müşteri hizmetleri ile iletişime geçerek destek almanızı rica ederiz. Marka tarafından sorunun çözülmemesi halinde, durumu destek@yanhak.com adresine e-posta göndererek Yanhak Destek Ekibimize bildiriniz."
+        }
+      ]
     },
+    {
+      title: "6. Güvenlik ve Gizlilik",
+      questions: [
+        {
+          question: "Kişisel verilerim nasıl korunuyor?",
+          answer: "Yanhak olarak kişisel verilerinizin güvenliği bizim için en önemli önceliktir. Verileriniz, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve ilgili mevzuat hükümlerine tam uyumlu şekilde korunmaktadır."
+        },
+        {
+          question: "Ödeme bilgilerim güvende mi?",
+          answer: "Ödeme bilgilerinizin güvenliği bizim için önceliktir. Tüm ödeme işlemleri, uluslararası güvenlik standardı olan PCI-DSS uyumlu altyapılar üzerinden gerçekleştirilir. Bu sayede, kart bilgileriniz kesinlikle tarafımızca saklanmaz."
+        },
+        {
+          question: "Şirketten ayrılırsam hesabım ne olur?",
+          answer: "Şirketinizle çalışma ilişkinizin sona ermesi durumunda, Yanhak hesabınıza erişim şirket yöneticiniz tarafından kapatma hakkına sahiptir. Şirketten ayrılmadan önce kullanılmayan çeklerinizi değerlendirmeniz önerilir."
+        }
+      ]
+    },
+    {
+      title: "7. Destek ve İletişim",
+      questions: [
+        {
+          question: "Sorun yaşarsam kiminle iletişime geçmeliyim?",
+          answer: "Hediye kodu/çeki kullanımı veya ürün alımı sırasında teslimatı harici bir sorunla karşılaştığınızda, öncelikle ilgili markanın müşteri hizmetleri ile iletişime geçerek destek almanızı rica ederiz. Marka tarafından sorunun çözülmemesi halinde, durumu destek@yanhak.com adresine bir e-posta göndererek Yanhak Destek Ekibimize bildirebilirsiniz."
+        },
+        {
+          question: "WhatsApp destek hattı var mı?",
+          answer: "Evet, WhatsApp üzerinden de destek alabilirsiniz. Hızlı çözüm için WhatsApp destek hattımızla iletişime geçebilirsiniz."
+        },
+        {
+          question: "Geri bildirim veya önerilerimi nasıl iletebilirim?",
+          answer: "Geri bildirimlerinizi ve önerilerinizi her zaman bekliyoruz! Bunun için destek@yanhak.com adresine bir e-posta göndermeniz yeterli. Özellikle yeni marka veya ürün taleplerinizi titizlikle değerlendirme listemize ekliyoruz."
+        }
+      ]
+    },
+    {
+      title: "8. Sıkça Sorulan Teknik Sorular",
+      questions: [
+        {
+          question: "Mobil uygulamanız var mı?",
+          answer: "Şu anda özel bir mobil uygulamamız bulunmamakla birlikte, web app yani web sitemiz tüm cihazlarla (telefon, tablet ve bilgisayar) tamamen uyumlu çalışmaktadır. Mobil uygulamamız üzerindeki geliştirmelerimiz ise hızla devam ediyor."
+        },
+        {
+          question: "Bildirimleri nasıl kapatırım?",
+          answer: "Bildirim tercihlerinizi kolayca yönetebilirsiniz. Hesabınıza giriş yaptıktan sonra profil ayarları bölümüne giderek e-posta ve anlık (push) bildirim tercihlerinizi dilediğiniz gibi düzenleyebilir, kapatabilir veya açabilirsiniz."
+        }
+      ]
+    },
+    {
+      title: "9. Marka Çeşitliliği, Marka Ekleme ve Kampanyalar",
+      questions: [
+        {
+          question: "Hangi markalarla çalışıyorsunuz?",
+          answer: "Yanhak olarak, geniş bir yelpazede 120'den fazla farklı markayla iş birliği yapıyoruz. Market, giyim, teknoloji, eğlence, sağlık ve daha pek çok kategoride anlaşmalı markalarımız bulunuyor. En güncel ve detaylı liste için uygulamamızdaki 'Ürünler' bölümünü ziyaret edebilirsiniz."
+        },
+        {
+          question: "Bir Ürün İçin Hem Yanhak İndirimi Hem de Marka Kampanyası Geçerli Olur mu?",
+          answer: "Bazı durumlarda Yanhak indirimleri, markaların kendi kampanyalarıyla birleşerek size ekstra fayda sağlayabilirken bazı durumlarda bu mümkün olmayabilir. Bu durum tamamen markanın kendi kurallarına bağlıdır. Ödeme ekranında gördüğünüz nihai tutar, size bu konuda kesin bilgi verecektir."
+        },
+        {
+          question: "Yeni Marka Talebinde Bulunabilir miyim?",
+          answer: "Evet, elbette! Yeni marka talepleriniz için destek@yanhak.com adresine bir e-posta göndermeniz yeterlidir. Taleplerinizi dikkatle inceliyor ve değerlendirme listemize ekliyoruz."
+        },
+        {
+          question: "Yurt dışından alışveriş yapabilir miyim?",
+          answer: "Her ülkede yayınlanan Yanhak versiyonun farklı olduğunu ve sizin şirketinizin lokasyonuna göre fiyatlama ve markaların gösterildiğini hatırlatmak isteriz. Uluslararası kullanım imkanı sunan markalar için istisnalar olabilir."
+        }
+      ]
+    }
   ];
 
   const contactOptions = [
@@ -194,170 +331,43 @@ const HelpDesk = () => {
 
       {/* Main Content */}
       <div className="container mx-auto px-6 py-16">
-        <Tabs defaultValue="browse" className="w-full">
-          <TabsList className="grid w-full grid-cols-4 mb-8">
-            <TabsTrigger value="browse">Göz At</TabsTrigger>
-            <TabsTrigger value="faq">Sık Sorulan</TabsTrigger>
-            <TabsTrigger value="contact">İletişim</TabsTrigger>
+        <Tabs defaultValue="faq" className="w-full">
+          <TabsList className="grid w-full grid-cols-2 mb-8">
+            <TabsTrigger value="faq">Sık Sorulan Sorular</TabsTrigger>
             <TabsTrigger value="guides">Rehberler</TabsTrigger>
           </TabsList>
 
-          {/* Browse Tab */}
-          <TabsContent value="browse" className="space-y-12">
-            {/* Categories */}
-            <section>
-              <h2 className="text-3xl font-bold mb-8">Kategoriler</h2>
-              <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
-                {categories.map((category) => (
-                  <Button
-                    key={category.id}
-                    variant={selectedCategory === category.id ? "default" : "outline"}
-                    onClick={() => setSelectedCategory(category.id)}
-                    className="flex flex-col items-center p-6 h-auto space-y-2 hover:scale-105 transition-all duration-200"
-                  >
-                    <category.icon className="h-6 w-6" />
-                    <span className="font-medium">{category.name}</span>
-                    <Badge variant="secondary" className="text-xs">
-                      {category.count}
-                    </Badge>
-                  </Button>
-                ))}
-              </div>
-            </section>
-
-            {/* Popular Articles */}
-            <section>
-              <h2 className="text-3xl font-bold mb-8">Popüler Makaleler</h2>
-              <div className="grid md:grid-cols-2 gap-6">
-                {filteredArticles.map((article, index) => (
-                  <Card 
-                    key={index} 
-                    className="group hover:shadow-card transition-all duration-300 cursor-pointer hover:scale-105"
-                  >
-                    <CardHeader>
-                      <div className="flex items-start justify-between">
-                        <CardTitle className="group-hover:text-primary transition-colors">
-                          {article.title}
-                        </CardTitle>
-                        <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all duration-200" />
-                      </div>
-                      <CardDescription className="text-base">
-                        {article.description}
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="flex items-center justify-between text-sm text-muted-foreground">
-                        <div className="flex items-center gap-4">
-                          <span className="flex items-center gap-1">
-                            <Clock className="h-4 w-4" />
-                            {article.readTime}
-                          </span>
-                          <span className="flex items-center gap-1">
-                            <Users className="h-4 w-4" />
-                            {article.views} görüntüleme
-                          </span>
-                        </div>
-                        <Badge variant="outline">
-                          {categories.find(c => c.id === article.category)?.name}
-                        </Badge>
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </section>
-          </TabsContent>
 
           {/* FAQ Tab */}
           <TabsContent value="faq">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl font-bold mb-8 text-center">Sık Sorulan Sorular</h2>
-              <Accordion type="single" collapsible className="space-y-4">
-                {faqData.map((faq, index) => (
-                  <AccordionItem 
-                    key={index} 
-                    value={`item-${index}`}
-                    className="border border-border rounded-lg px-6 data-[state=open]:shadow-card transition-all duration-200"
-                  >
-                    <AccordionTrigger className="text-left hover:no-underline hover:text-primary transition-colors">
-                      <span className="font-semibold">{faq.question}</span>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground text-base leading-relaxed pb-6">
-                      {faq.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-            </div>
-          </TabsContent>
-
-          {/* Contact Tab */}
-          <TabsContent value="contact">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold mb-8 text-center">Bizimle İletişime Geçin</h2>
-              <div className="grid md:grid-cols-2 gap-6">
-                {contactOptions.map((option, index) => (
-                  <Card 
-                    key={index} 
-                    className={cn(
-                      "group transition-all duration-300 cursor-pointer",
-                      option.available 
-                        ? "hover:shadow-card hover:scale-105" 
-                        : "opacity-60 cursor-not-allowed"
-                    )}
-                    onClick={() => {
-                      if (option.available && option.title === "E-posta Desteği") {
-                        window.location.href = "/submit-request";
-                      }
-                    }}
-                  >
-                    <CardHeader>
-                      <div className="flex items-center gap-4">
-                        <div className={cn(
-                          "w-12 h-12 rounded-xl flex items-center justify-center",
-                          option.available 
-                            ? "bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground" 
-                            : "bg-muted text-muted-foreground"
-                        )}>
-                          <option.icon className="h-6 w-6" />
-                        </div>
-                        <div>
-                          <CardTitle className="flex items-center gap-2">
-                            {option.title}
-                            {!option.available && (
-                              <Badge variant="outline" className="text-xs">
-                                Yakında
-                              </Badge>
-                            )}
-                          </CardTitle>
-                          <CardDescription>{option.description}</CardDescription>
-                        </div>
-                      </div>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="flex items-center justify-between">
-                        <span className="text-sm text-muted-foreground">
-                          Yanıt süresi: {option.responseTime}
-                        </span>
-                        <Button 
-                          variant={option.available ? "default" : "ghost"} 
-                          size="sm"
-                          disabled={!option.available}
-                          onClick={() => {
-                            if (option.title === "E-posta Desteği") {
-                              window.location.href = "/submit-request";
-                            }
-                          }}
+              <div className="space-y-8">
+                {faqCategories.map((category, categoryIndex) => (
+                  <div key={categoryIndex} className="space-y-4">
+                    <h3 className="text-2xl font-bold text-primary mb-6">{category.title}</h3>
+                    <Accordion type="single" collapsible className="space-y-4">
+                      {category.questions.map((faq, index) => (
+                        <AccordionItem 
+                          key={`${categoryIndex}-${index}`} 
+                          value={`item-${categoryIndex}-${index}`}
+                          className="border border-border rounded-lg px-6 data-[state=open]:shadow-card transition-all duration-200"
                         >
-                          {option.action}
-                        </Button>
-                      </div>
-                    </CardContent>
-                  </Card>
+                          <AccordionTrigger className="text-left hover:no-underline hover:text-primary transition-colors">
+                            <span className="font-semibold">{faq.question}</span>
+                          </AccordionTrigger>
+                          <AccordionContent className="text-muted-foreground text-base leading-relaxed pb-6">
+                            {faq.answer}
+                          </AccordionContent>
+                        </AccordionItem>
+                      ))}
+                    </Accordion>
+                  </div>
                 ))}
               </div>
             </div>
           </TabsContent>
+
 
           {/* Guides Tab */}
           <TabsContent value="guides">
@@ -425,9 +435,13 @@ const HelpDesk = () => {
             Uzman ekibimiz size yardımcı olmak için burada. Canlı chat başlatın veya bizimle iletişime geçin.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="hover:scale-105 transition-transform">
+            <Button 
+              size="lg" 
+              className="hover:scale-105 transition-transform"
+              onClick={() => window.open('https://wa.me/905555555555', '_blank')}
+            >
               <MessageCircle className="h-5 w-5 mr-2" />
-              Canlı Chat Başlat
+              WhatsApp Destek
             </Button>
             <Button 
               variant="outline" 
